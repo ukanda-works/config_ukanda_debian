@@ -40,7 +40,6 @@ snap install atom --classic
 snap install android-studio --classic
 snap install retroarch
 snap install eclipse --classic
-snap install libreoffice
 snap install gimp
 snap install fkill
 snap install discord
