@@ -2,7 +2,9 @@
 apt-get update
 echo "instalando drivers y controladores..................................................................................................................."
 dpkg –configure -a
-apt install w64codecs firmware-linux amd64-microcode 
+apt install w64codecs 
+apt install firmware-linux
+apt install amd64-microcode 
 dpkg -add architecture amd64
 dpkg -add architecture i386
 apt install xserver-xorg-video-all libva-drm2 libva-glx2 libva-wayland2 libva-x11-2 libva2
@@ -31,7 +33,7 @@ apt install i3blocks lm-sensors rofi pcmanfm
 echo "paquetes adicionales instalados........................................................................................................"
 
 echo "se instalaran aplicaciones del sistema......................................................................................................"
-apt install net-tools fish nautilus pluma snapd apache2 mariadb-server php vlc sudo  
+apt install net-tools fish nautilus pluma snapd apache2 mariadb-server php vlc sudo flameshot
 echo "aplicaciones del sistema con apt instaladas......................................................................................................"
 echo "instalacion aplicaciones con snap......................................................................................................"
 snap install telegram-desktop
