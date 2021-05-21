@@ -31,7 +31,7 @@ apt install i3blocks lm-sensors rofi pcmanfm
 echo "paquetes adicionales instalados........................................................................................................"
 
 echo "se instalaran aplicaciones del sistema......................................................................................................"
-apt install net-tools fish nautilus pluma steam snapd apache2 mariadb-server php7.4 vlc sudo  
+apt install net-tools fish nautilus pluma snapd apache2 mariadb-server php vlc sudo  
 echo "aplicaciones del sistema con apt instaladas......................................................................................................"
 echo "instalacion aplicaciones con snap......................................................................................................"
 snap install telegram-desktop
@@ -50,6 +50,7 @@ snap install phpstorm --classic
 snap install node --classic
 snap install arduino
 snap install instagraph
+snap install steam
 
 echo "instalando aplicaciones que no precisan de instalador.........................................................................................................."
 mkdir /root/instalador
