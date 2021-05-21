@@ -1,6 +1,6 @@
 #!/bin/dash
 apt-get update
-echo "instalando drivers y controladores"
+echo "instalando drivers y controladores..................................................................................................................."
 dpkg –configure -a
 apt install w64codecs firmware-linux amd64-microcode 
 dpkg -add architecture amd64
@@ -23,17 +23,17 @@ apt install firmware-ralink firmware-realtek
 apt install bluetooth bluez bluez-cups bluez-firmware bluez-tools btscanner gnome-bluetooth python-bluez pulseaudio-module-bluetooth
 apt install mobile-broadband-provider-info ppp pppconfig modemmanager modem-manager-gui modem-manager-gui-help usb-modeswitch usb-modeswitch-data wvdial
 apt install gammu gtkpod libgammu-i18n libgpod-common libgpod-cil libgpod4 libmtp-runtime mtp-tools wammu
-echo "drivers instalados"
-echo "instlando i3..."
+echo "drivers instalados......................................................................................................................."
+echo "instlando i3..............................................................................................................................."
 apt install xorg lightdm i3-wm i3status suckless-tools
-echo "i3 instalado ahora se instalaran paquetes adicionales"
+echo "i3 instalado ahora se instalaran paquetes adicionales......................................................................................"
 apt install i3blocks lm-sensors rofi pcmanfm
-echo "paquetes adicionales instalados"
+echo "paquetes adicionales instalados........................................................................................................"
 
-echo "se instalaran aplicaciones del sistema"
+echo "se instalaran aplicaciones del sistema......................................................................................................"
 apt install net-tools fish nautilus pluma steam snapd apache2 mariadb-server php7.4 vlc sudo  
-echo "aplicaciones del sistema con apt instaladas"
-echo "instalacion aplicaciones con snap"
+echo "aplicaciones del sistema con apt instaladas......................................................................................................"
+echo "instalacion aplicaciones con snap......................................................................................................"
 snap install telegram-desktop
 snap install dosbox-x
 snap install atom --classic
@@ -51,7 +51,7 @@ snap install node --classic
 snap install arduino
 snap install instagraph
 
-echo "instalando aplicaciones que no precisan de instalador...."
+echo "instalando aplicaciones que no precisan de instalador.........................................................................................................."
 mkdir /root/instalador
 cd instalador
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
@@ -62,7 +62,7 @@ apt update && sudo apt install virtualbox-6.0
 wget https://download.virtualbox.org/virtualbox/6.0.10/Oracle_VM_VirtualBox_Extension_Pack-6.0.10.vbox-extpack
 VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.0.10.vbox-extpack
 
-echo "todo terminado reiniciando...."
+echo "todo terminado reiniciando.........................................................................................................."
 systemctl reboot
 
 
